@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HttpController;
 use App\Http\Controllers\QuoteController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +20,6 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', [QuoteController::class, 'getQuote']);
+
+Route::get('/food', [HttpController::class, 'index']);
+Route::get('/store', [HttpController::class, 'store']);
