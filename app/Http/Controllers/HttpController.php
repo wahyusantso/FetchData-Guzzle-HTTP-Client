@@ -25,7 +25,7 @@ class HttpController extends Controller
 
     public function store(Request $request) {
         try {
-            $ApiStore = "http://192.168.106.235:8000/api/food/store";
+            $ApiStore = "xxxxxxxx:8000/api/food/store";
             $response = Http::post($ApiStore, [
                 //key => value
                 'nama_makanan' => 'Mie Pangsit',
