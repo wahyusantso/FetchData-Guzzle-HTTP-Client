@@ -12,7 +12,7 @@ class HttpController extends Controller
     //using citra cafe api
     public function index() {
         $client = new Client();
-        $apiUrl = "http://192.168.106.235:8000/api/food";
+        $apiUrl = "xxxxxxx:8000/api/food";
 
         try {
             $response = $client->get($apiUrl);
