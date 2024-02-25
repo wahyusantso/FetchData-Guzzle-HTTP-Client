@@ -23,3 +23,5 @@ Route::get('/', [QuoteController::class, 'getQuote']);
 
 Route::get('/food', [HttpController::class, 'index']);
 Route::get('/store', [HttpController::class, 'store']);
+Route::get('/update', [HttpController::class, 'update']);
+Route::get('/delete', [HttpController::class, 'delete']);
